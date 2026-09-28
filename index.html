@@ -2268,9 +2268,9 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
         CURRENT INSTRUMENT / SOUND
       </div>
 
-      <div class="soundName" id="soundName">Snare</div>
+      <div class="soundName" id="soundName">Concert Grand Piano</div>
 
-      <div class="soundDescription" id="soundDescription">สแนร์ • Drum Studio</div>
+      <div class="soundDescription" id="soundDescription">เปียโนแกรนด์ เสียงกังวานแบบคอนเสิร์ต • Note C4</div>
 
       <div class="soundVisualizer" id="soundVisualizer">
         <span></span>
@@ -2285,7 +2285,7 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
 
     </div>
 
-    <div class="soundKey" id="soundKey"><strong>NUM 2</strong>Snare</div>
+    <div class="soundKey" id="soundKey"><strong>C</strong>C4</div>
 
   </section>
 
@@ -2357,7 +2357,7 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
     <button class="fxPower" id="pianoFxPower" type="button">PIANO FX ON</button>
     <button class="fxReset" id="pianoFxReset" type="button">RESET FX</button>
     <label class="fxKnob">TREMOLO <input id="pianoTremolo" type="range" min="0" max="1" step=".01" value="0"><output id="pianoTremoloValue">0%</output></label>
-    <label class="fxKnob">PHASER <input id="pianoPhaser" type="range" min="0" max="1" step=".01" value="0"><output id="pianoPhaserValue">0%</output></label>
+    <label class="fxKnob">PHASER <input id="pianoPhaser" type="range" min="0" max="1" step=".01" value="0.08"><output id="pianoPhaserValue">8%</output></label>
     <label class="fxKnob">DRIVE <input id="pianoDrive" type="range" min="0" max="1" step=".01" value="0"><output id="pianoDriveValue">0%</output></label>
     <label class="fxKnob">LO-FI <input id="pianoLofi" type="range" min="0" max="1" step=".01" value="0"><output id="pianoLofiValue">0%</output></label>
     <label class="fxKnob">AUTO PAN <input id="pianoAutoPan" type="range" min="0" max="1" step=".01" value="0"><output id="pianoAutoPanValue">0%</output></label>
@@ -2375,13 +2375,13 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
 
       <select id="instrument">
 
-        <option value="piano">Concert Grand Piano</option>
+        <option value="piano" selected="">Concert Grand Piano</option>
         <option value="softpiano">Soft Grand Piano</option>
         <option value="brightpiano">Bright Grand Piano</option>
         <option value="epiano">Vintage Electric Piano</option>
         <option value="organ">Church Organ</option>
         <option value="guitar">Acoustic Guitar</option>
-        <option value="bass" selected="">Electric Bass</option>
+        <option value="bass">Electric Bass</option>
         <option value="strings">String Ensemble</option>
         <option value="violin">Solo Violin</option>
         <option value="flute">Concert Flute</option>
@@ -2445,9 +2445,9 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
 
       <div class="rangeRow">
 
-        <input id="reverb" type="range" min="0" max="1" step=".01" value="0.2">
+        <input id="reverb" type="range" min="0" max="1" step=".01" value="1">
 
-        <span class="value" id="reverbValue">20%</span>
+        <span class="value" id="reverbValue">100%</span>
 
       </div>
 
@@ -2457,16 +2457,16 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
     <div class="control">
       <label>PIANO CHORUS</label>
       <div class="rangeRow">
-        <input id="pianoChorus" type="range" min="0" max=".65" step=".01" value="0.03">
-        <span class="value" id="pianoChorusValue">3%</span>
+        <input id="pianoChorus" type="range" min="0" max=".65" step=".01" value="0.08">
+        <span class="value" id="pianoChorusValue">8%</span>
       </div>
     </div>
 
     <div class="control">
       <label>PIANO DELAY</label>
       <div class="rangeRow">
-        <input id="pianoDelay" type="range" min="0" max=".55" step=".01" value="0">
-        <span class="value" id="pianoDelayValue">0%</span>
+        <input id="pianoDelay" type="range" min="0" max=".55" step=".01" value="0.04">
+        <span class="value" id="pianoDelayValue">4%</span>
       </div>
     </div>
 
@@ -2562,7 +2562,7 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
         </select>
 
         <select class="shortcutQuality" data-index="1">
-          <option value="0">Major</option><option value="1" selected="">Minor</option><option value="2">Dim</option><option value="3">Aug</option><option value="4">Sus2</option><option value="5">Sus4</option><option value="6">6</option><option value="7">m6</option><option value="8">7</option><option value="9">maj7</option><option value="10">m7</option><option value="11">m7b5</option><option value="12">dim7</option><option value="13">add9</option><option value="14">9</option><option value="15">maj9</option><option value="16">m9</option>
+          <option value="0" selected="">Major</option><option value="1">Minor</option><option value="2">Dim</option><option value="3">Aug</option><option value="4">Sus2</option><option value="5">Sus4</option><option value="6">6</option><option value="7">m6</option><option value="8">7</option><option value="9">maj7</option><option value="10">m7</option><option value="11">m7b5</option><option value="12">dim7</option><option value="13">add9</option><option value="14">9</option><option value="15">maj9</option><option value="16">m9</option>
         </select>
 
         <select class="shortcutOct" data-index="1" title="Octave">
@@ -2570,7 +2570,7 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
         </select>
 
         <div class="shortcutName">
-          Dm
+          D
         </div>
         </div><div class="shortcutSlot" data-code="KeyC">
         <div class="shortcutKeyCap" data-shortcut="KeyC">
@@ -2582,7 +2582,7 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
         </select>
 
         <select class="shortcutQuality" data-index="2">
-          <option value="0">Major</option><option value="1" selected="">Minor</option><option value="2">Dim</option><option value="3">Aug</option><option value="4">Sus2</option><option value="5">Sus4</option><option value="6">6</option><option value="7">m6</option><option value="8">7</option><option value="9">maj7</option><option value="10">m7</option><option value="11">m7b5</option><option value="12">dim7</option><option value="13">add9</option><option value="14">9</option><option value="15">maj9</option><option value="16">m9</option>
+          <option value="0" selected="">Major</option><option value="1">Minor</option><option value="2">Dim</option><option value="3">Aug</option><option value="4">Sus2</option><option value="5">Sus4</option><option value="6">6</option><option value="7">m6</option><option value="8">7</option><option value="9">maj7</option><option value="10">m7</option><option value="11">m7b5</option><option value="12">dim7</option><option value="13">add9</option><option value="14">9</option><option value="15">maj9</option><option value="16">m9</option>
         </select>
 
         <select class="shortcutOct" data-index="2" title="Octave">
@@ -2590,7 +2590,7 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
         </select>
 
         <div class="shortcutName">
-          Em
+          E
         </div>
         </div><div class="shortcutSlot" data-code="KeyV">
         <div class="shortcutKeyCap" data-shortcut="KeyV">
@@ -2662,7 +2662,7 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
         </select>
 
         <select class="shortcutQuality" data-index="6">
-          <option value="0">Major</option><option value="1">Minor</option><option value="2" selected="">Dim</option><option value="3">Aug</option><option value="4">Sus2</option><option value="5">Sus4</option><option value="6">6</option><option value="7">m6</option><option value="8">7</option><option value="9">maj7</option><option value="10">m7</option><option value="11">m7b5</option><option value="12">dim7</option><option value="13">add9</option><option value="14">9</option><option value="15">maj9</option><option value="16">m9</option>
+          <option value="0" selected="">Major</option><option value="1">Minor</option><option value="2">Dim</option><option value="3">Aug</option><option value="4">Sus2</option><option value="5">Sus4</option><option value="6">6</option><option value="7">m6</option><option value="8">7</option><option value="9">maj7</option><option value="10">m7</option><option value="11">m7b5</option><option value="12">dim7</option><option value="13">add9</option><option value="14">9</option><option value="15">maj9</option><option value="16">m9</option>
         </select>
 
         <select class="shortcutOct" data-index="6" title="Octave">
@@ -2670,7 +2670,7 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
         </select>
 
         <div class="shortcutName">
-          Bdim
+          B
         </div>
         </div><div class="shortcutSlot" data-code="Comma">
         <div class="shortcutKeyCap" data-shortcut="Comma">
@@ -2682,15 +2682,15 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
         </select>
 
         <select class="shortcutQuality" data-index="7">
-          <option value="0">Major</option><option value="1">Minor</option><option value="2">Dim</option><option value="3">Aug</option><option value="4">Sus2</option><option value="5">Sus4</option><option value="6">6</option><option value="7">m6</option><option value="8">7</option><option value="9" selected="">maj7</option><option value="10">m7</option><option value="11">m7b5</option><option value="12">dim7</option><option value="13">add9</option><option value="14">9</option><option value="15">maj9</option><option value="16">m9</option>
+          <option value="0" selected="">Major</option><option value="1">Minor</option><option value="2">Dim</option><option value="3">Aug</option><option value="4">Sus2</option><option value="5">Sus4</option><option value="6">6</option><option value="7">m6</option><option value="8">7</option><option value="9">maj7</option><option value="10">m7</option><option value="11">m7b5</option><option value="12">dim7</option><option value="13">add9</option><option value="14">9</option><option value="15">maj9</option><option value="16">m9</option>
         </select>
 
         <select class="shortcutOct" data-index="7" title="Octave">
-          <option value="-3">-3</option><option value="-2">-2</option><option value="-1">-1</option><option value="0" selected="">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option>
+          <option value="-3">-3</option><option value="-2">-2</option><option value="-1">-1</option><option value="0">0</option><option value="1" selected="">+1</option><option value="2">+2</option><option value="3">+3</option>
         </select>
 
         <div class="shortcutName">
-          Cmaj7
+          C
         </div>
         </div><div class="shortcutSlot" data-code="Period">
         <div class="shortcutKeyCap" data-shortcut="Period">
@@ -2698,19 +2698,19 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
         </div>
 
         <select class="shortcutRoot" data-index="8">
-          <option value="0">C</option><option value="1">C#</option><option value="2">D</option><option value="3">D#</option><option value="4">E</option><option value="5">F</option><option value="6">F#</option><option value="7" selected="">G</option><option value="8">G#</option><option value="9">A</option><option value="10">A#</option><option value="11">B</option>
+          <option value="0">C</option><option value="1">C#</option><option value="2" selected="">D</option><option value="3">D#</option><option value="4">E</option><option value="5">F</option><option value="6">F#</option><option value="7">G</option><option value="8">G#</option><option value="9">A</option><option value="10">A#</option><option value="11">B</option>
         </select>
 
         <select class="shortcutQuality" data-index="8">
-          <option value="0">Major</option><option value="1">Minor</option><option value="2">Dim</option><option value="3">Aug</option><option value="4">Sus2</option><option value="5">Sus4</option><option value="6">6</option><option value="7">m6</option><option value="8" selected="">7</option><option value="9">maj7</option><option value="10">m7</option><option value="11">m7b5</option><option value="12">dim7</option><option value="13">add9</option><option value="14">9</option><option value="15">maj9</option><option value="16">m9</option>
+          <option value="0" selected="">Major</option><option value="1">Minor</option><option value="2">Dim</option><option value="3">Aug</option><option value="4">Sus2</option><option value="5">Sus4</option><option value="6">6</option><option value="7">m6</option><option value="8">7</option><option value="9">maj7</option><option value="10">m7</option><option value="11">m7b5</option><option value="12">dim7</option><option value="13">add9</option><option value="14">9</option><option value="15">maj9</option><option value="16">m9</option>
         </select>
 
         <select class="shortcutOct" data-index="8" title="Octave">
-          <option value="-3">-3</option><option value="-2">-2</option><option value="-1">-1</option><option value="0" selected="">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option>
+          <option value="-3">-3</option><option value="-2">-2</option><option value="-1">-1</option><option value="0">0</option><option value="1" selected="">+1</option><option value="2">+2</option><option value="3">+3</option>
         </select>
 
         <div class="shortcutName">
-          G7
+          D
         </div>
         </div><div class="shortcutSlot" data-code="Slash">
         <div class="shortcutKeyCap" data-shortcut="Slash">
@@ -2718,19 +2718,19 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
         </div>
 
         <select class="shortcutRoot" data-index="9">
-          <option value="0">C</option><option value="1">C#</option><option value="2">D</option><option value="3">D#</option><option value="4">E</option><option value="5">F</option><option value="6">F#</option><option value="7">G</option><option value="8">G#</option><option value="9" selected="">A</option><option value="10">A#</option><option value="11">B</option>
+          <option value="0">C</option><option value="1">C#</option><option value="2">D</option><option value="3">D#</option><option value="4" selected="">E</option><option value="5">F</option><option value="6">F#</option><option value="7">G</option><option value="8">G#</option><option value="9">A</option><option value="10">A#</option><option value="11">B</option>
         </select>
 
         <select class="shortcutQuality" data-index="9">
-          <option value="0">Major</option><option value="1">Minor</option><option value="2">Dim</option><option value="3">Aug</option><option value="4">Sus2</option><option value="5">Sus4</option><option value="6">6</option><option value="7">m6</option><option value="8">7</option><option value="9">maj7</option><option value="10" selected="">m7</option><option value="11">m7b5</option><option value="12">dim7</option><option value="13">add9</option><option value="14">9</option><option value="15">maj9</option><option value="16">m9</option>
+          <option value="0" selected="">Major</option><option value="1">Minor</option><option value="2">Dim</option><option value="3">Aug</option><option value="4">Sus2</option><option value="5">Sus4</option><option value="6">6</option><option value="7">m6</option><option value="8">7</option><option value="9">maj7</option><option value="10">m7</option><option value="11">m7b5</option><option value="12">dim7</option><option value="13">add9</option><option value="14">9</option><option value="15">maj9</option><option value="16">m9</option>
         </select>
 
         <select class="shortcutOct" data-index="9" title="Octave">
-          <option value="-3">-3</option><option value="-2">-2</option><option value="-1">-1</option><option value="0" selected="">0</option><option value="1">+1</option><option value="2">+2</option><option value="3">+3</option>
+          <option value="-3">-3</option><option value="-2">-2</option><option value="-1">-1</option><option value="0">0</option><option value="1" selected="">+1</option><option value="2">+2</option><option value="3">+3</option>
         </select>
 
         <div class="shortcutName">
-          Am7
+          E
         </div>
         </div></div>
 
@@ -2743,13 +2743,13 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
 
     <div class="pianoTop">
 
-      <div class="pianoTitle" id="pianoTitle">ELECTRIC BASS • 48 VOICES</div>
+      <div class="pianoTitle" id="pianoTitle">CONCERT GRAND PIANO • 48 VOICES</div>
 
       <div class="octaveControl">
 
         <button id="octDown">−</button>
 
-        <div class="octaveValue" id="octaveValue">OCT +0</div>
+        <div class="octaveValue" id="octaveValue">OCT -1</div>
 
         <button id="octUp">+</button>
 
@@ -2978,11 +2978,11 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
 
       <div class="meterHead">
         <span>REVERB</span>
-        <span id="reverbText">20%</span>
+        <span id="reverbText">100%</span>
       </div>
 
       <div class="bar">
-        <div class="fill" id="reverbFill" style="width: 20%;"></div>
+        <div class="fill" id="reverbFill" style="width: 100%;"></div>
       </div>
 
     </div>
@@ -2998,7 +2998,7 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
       CHORD HISTORY
     </div>
 
-    <div class="historyList" id="historyList"><div class="historyItem">A</div><div class="historyItem">C</div><div class="historyItem">C5</div><div class="historyItem">C</div><div class="historyItem">E{+3}</div><div class="historyItem">E</div><div class="historyItem">A</div><div class="historyItem">F{+4}</div><div class="historyItem">F</div><div class="historyItem">F{+4}</div><div class="historyItem">F</div><div class="historyItem">A</div></div>
+    <div class="historyList" id="historyList"><div class="historyItem">F</div><div class="historyItem">F{+4}</div><div class="historyItem">F</div><div class="historyItem">C</div><div class="historyItem">A{+3}</div><div class="historyItem">F</div><div class="historyItem">F{+4}</div><div class="historyItem">F</div><div class="historyItem">C</div><div class="historyItem">A{+3}</div><div class="historyItem">F</div><div class="historyItem">F{+4}</div></div>
 
   </section>
 
@@ -3060,13 +3060,13 @@ body{background-image:linear-gradient(rgba(5,14,31,.78),rgba(5,14,31,.84)),var(-
         <label class="drumSeqRange">BPM <input id="drumSeqBpm" type="range" min="60" max="180" step="1" value="110"><output id="drumSeqBpmValue">110</output></label>
         <label class="drumSeqRange">SWING <input id="drumSeqSwing" type="range" min="0" max=".35" step=".01" value="0"><output id="drumSeqSwingValue">0%</output></label>
       </div>
-      <div class="drumSeqGridScroll"><div class="drumSeqGrid" id="drumSeqGrid"><div class="drumSeqLane"><span class="drumSeqLaneName">STEP</span><span class="drumSeqStepNumber">1</span><span class="drumSeqStepNumber">2</span><span class="drumSeqStepNumber">3</span><span class="drumSeqStepNumber">4</span><span class="drumSeqStepNumber">5</span><span class="drumSeqStepNumber">6</span><span class="drumSeqStepNumber">7</span><span class="drumSeqStepNumber">8</span><span class="drumSeqStepNumber">9</span><span class="drumSeqStepNumber">10</span><span class="drumSeqStepNumber">11</span><span class="drumSeqStepNumber">12</span><span class="drumSeqStepNumber">13</span><span class="drumSeqStepNumber">14</span><span class="drumSeqStepNumber">15</span><span class="drumSeqStepNumber">16</span></div><div class="drumSeqLane" data-track="kick"><span class="drumSeqLaneName">KICK</span><button type="button" class="drumSeqCell" data-track="kick" data-step="0" aria-label="KICK step 1" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="kick" data-step="1" aria-label="KICK step 2" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="2" aria-label="KICK step 3" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="kick" data-step="3" aria-label="KICK step 4" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="4" aria-label="KICK step 5" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="kick" data-step="5" aria-label="KICK step 6" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="6" aria-label="KICK step 7" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="kick" data-step="7" aria-label="KICK step 8" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="8" aria-label="KICK step 9" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="kick" data-step="9" aria-label="KICK step 10" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="10" aria-label="KICK step 11" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="kick" data-step="11" aria-label="KICK step 12" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="12" aria-label="KICK step 13" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="kick" data-step="13" aria-label="KICK step 14" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="14" aria-label="KICK step 15" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="kick" data-step="15" aria-label="KICK step 16" aria-pressed="true"></button></div><div class="drumSeqLane" data-track="snare"><span class="drumSeqLaneName">SNARE</span><button type="button" class="drumSeqCell on" data-track="snare" data-step="0" aria-label="SNARE step 1" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="1" aria-label="SNARE step 2" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="snare" data-step="2" aria-label="SNARE step 3" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="3" aria-label="SNARE step 4" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="snare" data-step="4" aria-label="SNARE step 5" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="5" aria-label="SNARE step 6" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="snare" data-step="6" aria-label="SNARE step 7" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="7" aria-label="SNARE step 8" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="snare" data-step="8" aria-label="SNARE step 9" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="9" aria-label="SNARE step 10" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="snare" data-step="10" aria-label="SNARE step 11" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="11" aria-label="SNARE step 12" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="snare" data-step="12" aria-label="SNARE step 13" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="13" aria-label="SNARE step 14" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="snare" data-step="14" aria-label="SNARE step 15" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="15" aria-label="SNARE step 16" aria-pressed="false"></button></div><div class="drumSeqLane" data-track="hat"><span class="drumSeqLaneName">HI-HAT</span><button type="button" class="drumSeqCell" data-track="hat" data-step="0" aria-label="HI-HAT step 1" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="hat" data-step="1" aria-label="HI-HAT step 2" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="2" aria-label="HI-HAT step 3" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="hat" data-step="3" aria-label="HI-HAT step 4" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="4" aria-label="HI-HAT step 5" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="hat" data-step="5" aria-label="HI-HAT step 6" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="6" aria-label="HI-HAT step 7" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="hat" data-step="7" aria-label="HI-HAT step 8" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="8" aria-label="HI-HAT step 9" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="hat" data-step="9" aria-label="HI-HAT step 10" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="10" aria-label="HI-HAT step 11" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="hat" data-step="11" aria-label="HI-HAT step 12" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="12" aria-label="HI-HAT step 13" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="hat" data-step="13" aria-label="HI-HAT step 14" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="14" aria-label="HI-HAT step 15" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="hat" data-step="15" aria-label="HI-HAT step 16" aria-pressed="true"></button></div><div class="drumSeqLane" data-track="openhat"><span class="drumSeqLaneName">OPEN HAT</span><button type="button" class="drumSeqCell on" data-track="openhat" data-step="0" aria-label="OPEN HAT step 1" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="1" aria-label="OPEN HAT step 2" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="openhat" data-step="2" aria-label="OPEN HAT step 3" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="3" aria-label="OPEN HAT step 4" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="openhat" data-step="4" aria-label="OPEN HAT step 5" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="5" aria-label="OPEN HAT step 6" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="openhat" data-step="6" aria-label="OPEN HAT step 7" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="7" aria-label="OPEN HAT step 8" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="openhat" data-step="8" aria-label="OPEN HAT step 9" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="9" aria-label="OPEN HAT step 10" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="openhat" data-step="10" aria-label="OPEN HAT step 11" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="11" aria-label="OPEN HAT step 12" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="openhat" data-step="12" aria-label="OPEN HAT step 13" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="13" aria-label="OPEN HAT step 14" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="openhat" data-step="14" aria-label="OPEN HAT step 15" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="15" aria-label="OPEN HAT step 16" aria-pressed="false"></button></div><div class="drumSeqLane" data-track="ride"><span class="drumSeqLaneName">RIDE</span><button type="button" class="drumSeqCell" data-track="ride" data-step="0" aria-label="RIDE step 1" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="ride" data-step="1" aria-label="RIDE step 2" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="2" aria-label="RIDE step 3" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="ride" data-step="3" aria-label="RIDE step 4" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="4" aria-label="RIDE step 5" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="ride" data-step="5" aria-label="RIDE step 6" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="6" aria-label="RIDE step 7" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="ride" data-step="7" aria-label="RIDE step 8" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="8" aria-label="RIDE step 9" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="ride" data-step="9" aria-label="RIDE step 10" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="10" aria-label="RIDE step 11" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="ride" data-step="11" aria-label="RIDE step 12" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="12" aria-label="RIDE step 13" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="ride" data-step="13" aria-label="RIDE step 14" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="14" aria-label="RIDE step 15" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="ride" data-step="15" aria-label="RIDE step 16" aria-pressed="true"></button></div><div class="drumSeqLane" data-track="cowbell"><span class="drumSeqLaneName">COWBELL</span><button type="button" class="drumSeqCell on" data-track="cowbell" data-step="0" aria-label="COWBELL step 1" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="1" aria-label="COWBELL step 2" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="cowbell" data-step="2" aria-label="COWBELL step 3" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="3" aria-label="COWBELL step 4" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="cowbell" data-step="4" aria-label="COWBELL step 5" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="5" aria-label="COWBELL step 6" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="cowbell" data-step="6" aria-label="COWBELL step 7" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="7" aria-label="COWBELL step 8" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="cowbell" data-step="8" aria-label="COWBELL step 9" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="9" aria-label="COWBELL step 10" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="cowbell" data-step="10" aria-label="COWBELL step 11" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="11" aria-label="COWBELL step 12" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="cowbell" data-step="12" aria-label="COWBELL step 13" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="13" aria-label="COWBELL step 14" aria-pressed="false"></button><button type="button" class="drumSeqCell on" data-track="cowbell" data-step="14" aria-label="COWBELL step 15" aria-pressed="true"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="15" aria-label="COWBELL step 16" aria-pressed="false"></button></div></div></div>
+      <div class="drumSeqGridScroll"><div class="drumSeqGrid" id="drumSeqGrid"><div class="drumSeqLane"><span class="drumSeqLaneName">STEP</span><span class="drumSeqStepNumber">1</span><span class="drumSeqStepNumber">2</span><span class="drumSeqStepNumber">3</span><span class="drumSeqStepNumber">4</span><span class="drumSeqStepNumber">5</span><span class="drumSeqStepNumber">6</span><span class="drumSeqStepNumber">7</span><span class="drumSeqStepNumber">8</span><span class="drumSeqStepNumber">9</span><span class="drumSeqStepNumber">10</span><span class="drumSeqStepNumber">11</span><span class="drumSeqStepNumber">12</span><span class="drumSeqStepNumber">13</span><span class="drumSeqStepNumber">14</span><span class="drumSeqStepNumber">15</span><span class="drumSeqStepNumber">16</span></div><div class="drumSeqLane" data-track="kick"><span class="drumSeqLaneName">KICK</span><button type="button" class="drumSeqCell" data-track="kick" data-step="0" aria-label="KICK step 1" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="1" aria-label="KICK step 2" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="2" aria-label="KICK step 3" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="3" aria-label="KICK step 4" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="4" aria-label="KICK step 5" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="5" aria-label="KICK step 6" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="6" aria-label="KICK step 7" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="7" aria-label="KICK step 8" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="8" aria-label="KICK step 9" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="9" aria-label="KICK step 10" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="10" aria-label="KICK step 11" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="11" aria-label="KICK step 12" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="12" aria-label="KICK step 13" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="13" aria-label="KICK step 14" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="14" aria-label="KICK step 15" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="kick" data-step="15" aria-label="KICK step 16" aria-pressed="false"></button></div><div class="drumSeqLane" data-track="snare"><span class="drumSeqLaneName">SNARE</span><button type="button" class="drumSeqCell" data-track="snare" data-step="0" aria-label="SNARE step 1" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="1" aria-label="SNARE step 2" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="2" aria-label="SNARE step 3" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="3" aria-label="SNARE step 4" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="4" aria-label="SNARE step 5" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="5" aria-label="SNARE step 6" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="6" aria-label="SNARE step 7" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="7" aria-label="SNARE step 8" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="8" aria-label="SNARE step 9" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="9" aria-label="SNARE step 10" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="10" aria-label="SNARE step 11" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="11" aria-label="SNARE step 12" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="12" aria-label="SNARE step 13" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="13" aria-label="SNARE step 14" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="14" aria-label="SNARE step 15" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="snare" data-step="15" aria-label="SNARE step 16" aria-pressed="false"></button></div><div class="drumSeqLane" data-track="hat"><span class="drumSeqLaneName">HI-HAT</span><button type="button" class="drumSeqCell" data-track="hat" data-step="0" aria-label="HI-HAT step 1" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="1" aria-label="HI-HAT step 2" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="2" aria-label="HI-HAT step 3" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="3" aria-label="HI-HAT step 4" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="4" aria-label="HI-HAT step 5" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="5" aria-label="HI-HAT step 6" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="6" aria-label="HI-HAT step 7" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="7" aria-label="HI-HAT step 8" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="8" aria-label="HI-HAT step 9" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="9" aria-label="HI-HAT step 10" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="10" aria-label="HI-HAT step 11" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="11" aria-label="HI-HAT step 12" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="12" aria-label="HI-HAT step 13" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="13" aria-label="HI-HAT step 14" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="14" aria-label="HI-HAT step 15" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="hat" data-step="15" aria-label="HI-HAT step 16" aria-pressed="false"></button></div><div class="drumSeqLane" data-track="openhat"><span class="drumSeqLaneName">OPEN HAT</span><button type="button" class="drumSeqCell" data-track="openhat" data-step="0" aria-label="OPEN HAT step 1" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="1" aria-label="OPEN HAT step 2" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="2" aria-label="OPEN HAT step 3" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="3" aria-label="OPEN HAT step 4" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="4" aria-label="OPEN HAT step 5" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="5" aria-label="OPEN HAT step 6" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="6" aria-label="OPEN HAT step 7" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="7" aria-label="OPEN HAT step 8" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="8" aria-label="OPEN HAT step 9" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="9" aria-label="OPEN HAT step 10" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="10" aria-label="OPEN HAT step 11" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="11" aria-label="OPEN HAT step 12" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="12" aria-label="OPEN HAT step 13" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="13" aria-label="OPEN HAT step 14" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="14" aria-label="OPEN HAT step 15" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="openhat" data-step="15" aria-label="OPEN HAT step 16" aria-pressed="false"></button></div><div class="drumSeqLane" data-track="ride"><span class="drumSeqLaneName">RIDE</span><button type="button" class="drumSeqCell" data-track="ride" data-step="0" aria-label="RIDE step 1" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="1" aria-label="RIDE step 2" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="2" aria-label="RIDE step 3" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="3" aria-label="RIDE step 4" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="4" aria-label="RIDE step 5" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="5" aria-label="RIDE step 6" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="6" aria-label="RIDE step 7" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="7" aria-label="RIDE step 8" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="8" aria-label="RIDE step 9" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="9" aria-label="RIDE step 10" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="10" aria-label="RIDE step 11" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="11" aria-label="RIDE step 12" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="12" aria-label="RIDE step 13" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="13" aria-label="RIDE step 14" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="14" aria-label="RIDE step 15" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="ride" data-step="15" aria-label="RIDE step 16" aria-pressed="false"></button></div><div class="drumSeqLane" data-track="cowbell"><span class="drumSeqLaneName">COWBELL</span><button type="button" class="drumSeqCell" data-track="cowbell" data-step="0" aria-label="COWBELL step 1" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="1" aria-label="COWBELL step 2" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="2" aria-label="COWBELL step 3" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="3" aria-label="COWBELL step 4" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="4" aria-label="COWBELL step 5" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="5" aria-label="COWBELL step 6" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="6" aria-label="COWBELL step 7" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="7" aria-label="COWBELL step 8" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="8" aria-label="COWBELL step 9" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="9" aria-label="COWBELL step 10" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="10" aria-label="COWBELL step 11" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="11" aria-label="COWBELL step 12" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="12" aria-label="COWBELL step 13" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="13" aria-label="COWBELL step 14" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="14" aria-label="COWBELL step 15" aria-pressed="false"></button><button type="button" class="drumSeqCell" data-track="cowbell" data-step="15" aria-label="COWBELL step 16" aria-pressed="false"></button></div></div></div>
       <p class="drumSeqHint">แตะช่องเพื่อเปิด/ปิดจังหวะ • ปรับ BPM และ Swing ได้ • ระบบจำแพตเทิร์นไว้ในเครื่อง</p>
     </section>
   </section>
 </div>
 
-<script>window.PIANO_BOOTSTRAP_SETTINGS={"instrument":"bass","volume":"0.78","attack":"0.001","release":"4","reverb":"0.2","brightness":"0.55","pianoChorus":"0.03","pianoDelay":"0","pianoTremolo":"0","pianoPhaser":"0","pianoDrive":"0","pianoLofi":"0","pianoAutoPan":"0","pianoFxEnabled":true,"pianoFxPreset":"custom","autoSustainTime":"2","autoSustain":false,"octave":0,"metroBpm":"100","metroBeats":"4","metroVolume":"1","shortcuts":[{"code":"KeyZ","root":0,"quality":0,"oct":0},{"code":"KeyX","root":2,"quality":1,"oct":0},{"code":"KeyC","root":4,"quality":1,"oct":0},{"code":"KeyV","root":5,"quality":0,"oct":0},{"code":"KeyB","root":7,"quality":0,"oct":0},{"code":"KeyN","root":9,"quality":1,"oct":0},{"code":"KeyM","root":11,"quality":2,"oct":0},{"code":"Comma","root":0,"quality":9,"oct":0},{"code":"Period","root":7,"quality":8,"oct":0},{"code":"Slash","root":9,"quality":10,"oct":0}]};</script><script>
+<script>window.PIANO_BOOTSTRAP_SETTINGS={"instrument":"piano","volume":"0.78","attack":"0.001","release":"4","reverb":"1","brightness":"0.55","pianoChorus":"0.08","pianoDelay":"0.04","pianoTremolo":"0","pianoPhaser":"0.08","pianoDrive":"0","pianoLofi":"0","pianoAutoPan":"0","pianoFxEnabled":true,"pianoFxPreset":"custom","autoSustainTime":"2","autoSustain":false,"octave":-1,"metroBpm":"100","metroBeats":"4","metroVolume":"1","shortcuts":[{"code":"KeyZ","root":0,"quality":0,"oct":0},{"code":"KeyX","root":2,"quality":0,"oct":0},{"code":"KeyC","root":4,"quality":0,"oct":0},{"code":"KeyV","root":5,"quality":0,"oct":0},{"code":"KeyB","root":7,"quality":0,"oct":0},{"code":"KeyN","root":9,"quality":1,"oct":0},{"code":"KeyM","root":11,"quality":0,"oct":0},{"code":"Comma","root":0,"quality":0,"oct":1},{"code":"Period","root":2,"quality":0,"oct":1},{"code":"Slash","root":4,"quality":0,"oct":1}]};</script><script>window.PIANO_BOOTSTRAP_SETTINGS={"instrument":"bass","volume":"0.78","attack":"0.001","release":"4","reverb":"0.2","brightness":"0.55","pianoChorus":"0.03","pianoDelay":"0","pianoTremolo":"0","pianoPhaser":"0","pianoDrive":"0","pianoLofi":"0","pianoAutoPan":"0","pianoFxEnabled":true,"pianoFxPreset":"custom","autoSustainTime":"2","autoSustain":false,"octave":0,"metroBpm":"100","metroBeats":"4","metroVolume":"1","shortcuts":[{"code":"KeyZ","root":0,"quality":0,"oct":0},{"code":"KeyX","root":2,"quality":1,"oct":0},{"code":"KeyC","root":4,"quality":1,"oct":0},{"code":"KeyV","root":5,"quality":0,"oct":0},{"code":"KeyB","root":7,"quality":0,"oct":0},{"code":"KeyN","root":9,"quality":1,"oct":0},{"code":"KeyM","root":11,"quality":2,"oct":0},{"code":"Comma","root":0,"quality":9,"oct":0},{"code":"Period","root":7,"quality":8,"oct":0},{"code":"Slash","root":9,"quality":10,"oct":0}]};</script><script>
 "use strict";
 
 /* =========================================================
@@ -8464,6 +8464,7 @@ updateChord();
 syncDrumMetroUI();
 
 </script>
+
 
 
 
